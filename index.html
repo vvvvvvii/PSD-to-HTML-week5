@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="style.scss/all.scss">
+    <title>Document</title>
+</head>
+
+<body>
+        <div class="row">
+            <div class="col-4">
+                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg" alt="logo_img">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
+                        <span class="material-icons middle">
+                            assessment
+                        </span>
+                        Dashboard
+                    </a>
+                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-question-list" data-toggle="list" href="#list-question" role="tab" aria-controls="question">
+                        <span class="material-icons middle">
+                            question_answer
+                        </span>
+                        Question
+                    </a>
+                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-assignment-list" data-toggle="list" href="#list-assignment" role="tab" aria-controls="assignment">
+                        <span class="material-icons middle">
+                            assignment
+                        </span>
+                        Assignment
+                    </a>
+                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-course-list" data-toggle="list" href="#list-course" role="tab" aria-controls="course">
+                        <span class="material-icons middle">
+                            video_library
+                        </span>
+                        Course
+                    </a>
+                    <a class="list-group-item list-group-item-action active font-m lh-m" id="list-admin-list" data-toggle="list" href="#list-admin" role="tab" aria-controls="admin">
+                        <span class="material-icons middle">
+                            people_alt
+                        </span>
+                        Admin
+                    </a>
+                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+                        <span class="material-icons middle">
+                            settings
+                        </span>
+                        Settings
+                    </a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
+                        Dashboard 頁面建置中
+                    </div>
+                    <div class="tab-pane fade" id="list-question" role="tabpanel" aria-labelledby="list-question-list">
+                        Question 頁面建置中
+                    </div>
+                    <div class="tab-pane fade" id="list-assignment" role="tabpanel" aria-labelledby="list-assignment-list">
+
+                    </div>
+                    <div class="tab-pane fade" id="list-course" role="tabpanel" aria-labelledby="list-course-list">
+                        Course 頁面建置中
+                    </div>
+                    <div class="tab-pane fade" id="list-admin" role="tabpanel" aria-labelledby="list-admin-list">
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Verfied</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>#1</td>
+                                <td>Emir Wicks</td>
+                                <td>emir.wicks@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#2</td>
+                                <td>Zaina Goldsmith</td>
+                                <td>zaina.goldsmith@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#3</td>
+                                <td>Mahima Lopez</td>
+                                <td>Mahima.Lopez@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#4</td>
+                                <td>Pharrell Murray</td>
+                                <td>Pharrell.Murray@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#5</td>
+                                <td>Annika Mcbride</td>
+                                <td>Annika.Mcbride@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#6</td>
+                                <td>Fatimah Clark</td>
+                                <td>Fatimah.Clark@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#7</td>
+                                <td>Klaudia Rhodes</td>
+                                <td>Klaudia.Rhodes@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#8</td>
+                                <td>Tillie Lucero</td>
+                                <td>Tillie.Lucero@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#9</td>
+                                <td>Sabrina Stephenson</td>
+                                <td>Sabrina.Stephenson@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>#10</td>
+                                <td>Annie Smith</td>
+                                <td>Annie.Smith@mail.com</td>
+                                <td>Yes</td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            visibility
+                                        </span>
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="#">
+                                        <span class="material-icons middle">
+                                            edit
+                                        </span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+                        Settings 頁面建置中</div>
+                </div>
+            </div>
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+</body>
+
+</html>

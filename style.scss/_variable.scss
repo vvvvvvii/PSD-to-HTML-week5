@@ -1,0 +1,21 @@
+/*color variable*/
+$primary: #EDF4EE;
+$accent: #121212;
+$secondary: #FFFFFF;
+$warn: #E3006E;
+
+$dark-primary: #2A8356;
+$light-primary: #CDDDCD;
+
+$light-accent: #0000009A;
+
+/*line height variable*/
+$lineHeightTypes: (
+  xs:15px,
+  s:17px,
+  m:19px,
+  l:21px,
+  xl:24px,
+  xxl:29px
+) !default;
+

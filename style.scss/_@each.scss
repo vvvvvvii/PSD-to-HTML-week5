@@ -1,0 +1,5 @@
+@each $name, $lineHeight in $lineHeightTypes {
+    .lh-#{$name} {
+      line-height:$lineHeight;
+    }
+}
