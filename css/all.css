@@ -112,6 +112,7 @@ img {
 
 a {
   color: #121212;
+  cursor: pointer;
 }
 
 a:hover {
@@ -130,6 +131,10 @@ a:hover {
 
 .bg-primary {
   background: #EDF4EE !important;
+}
+
+.bg-dark-primary {
+  background: #2A8356;
 }
 
 .row {
@@ -245,6 +250,20 @@ a:hover {
 
 .topnav span:hover {
   color: #2A8356;
+}
+
+.search .modal-content {
+  width: 65%;
+}
+
+.search-btn {
+  background: #CDDDCD;
+  color: #2A8356;
+}
+
+.search-btn:hover {
+  background: #2A8356;
+  color: #EDF4EE;
 }
 
 .notification {
