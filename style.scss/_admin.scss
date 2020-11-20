@@ -1,0 +1,50 @@
+.adminList{
+    margin-bottom: 63px;
+}
+
+.adminList-th-padding{
+    padding-bottom: 4px;
+}
+
+.adminList-padding{
+    padding-top: 19px;
+    padding-bottom: 17px;
+}
+
+.id-col{
+    width: 12.9735%;
+}
+
+.name-col{
+    width: 25.4347%;
+}
+
+.email-col{
+    width: 35.326%;
+}
+
+.verfied-col{
+    width: 19.2391%;
+}
+
+.visibility-col{
+    width: 5.1086%;
+}
+
+.pagination{
+    position:absolute;
+    right:0px;
+}
+
+.page-link{
+    color: $dark-primary;
+    border: 1px solid $dark-primary;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    padding: 4px;
+    &:hover{
+        color: $secondary;
+        background: $dark-primary;
+    }
+}
