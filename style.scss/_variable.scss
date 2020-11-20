@@ -2,15 +2,33 @@
 $primary: #EDF4EE;
 $accent: #121212;
 $secondary: #FFFFFF;
-$warn: #E3006E;
+$warning: #E3006E;
 
 $dark-primary: #2A8356;
 $light-primary: #CDDDCD;
-
 $light-accent: #0000009A;
 
+$colorTypes:(
+  primary: $primary,
+  accent: $accent,
+  secondary: $secondary,
+  warning: $warning,
+  dark-primary: $dark-primary,
+  light-primary: $light-primary,
+  light-accent: $light-accent
+) !default;
+
+/*font size variable*/
+$fontTypes:(
+  xs:0.75rem, //12px
+  s:0.875rem, //14px
+  m:1rem, //16px
+  l:1.25rem, //20px
+  xl:1.5rem //24px
+) !default;
+
 /*line height variable*/
-$lineHeightTypes: (
+$lineHeightTypes:(
   xs:15px,
   s:17px,
   m:19px,
