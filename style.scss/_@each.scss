@@ -1,5 +1,20 @@
+@each $name, $color in $colorTypes {
+  .#{$name} {
+    color:$color;
+  }
+  .border-bottom-#{$name} {
+    border-bottom: 1px solid $color;
+  }
+}
+
 @each $name, $lineHeight in $lineHeightTypes {
-    .lh-#{$name} {
-      line-height:$lineHeight;
-    }
+  .lh-#{$name} {
+    line-height:$lineHeight;
+  }
+}
+
+@each $name, $fontSize in $fontTypes {
+  .font-#{$name} {
+    font-size:$fontSize;
+  }
 }
