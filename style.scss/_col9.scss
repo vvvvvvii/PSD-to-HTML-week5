@@ -18,6 +18,21 @@
     color: $dark-primary;
 }
 
+.search .modal-content{
+    width: 65%;
+}
+
+.search-btn{
+    background: $light-primary;
+    color: $dark-primary;
+    &:hover{
+        background: $dark-primary;
+        color: $primary;
+    }
+}
+
 .notification{
     margin-left: 24px;
 }
+
+
