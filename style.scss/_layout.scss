@@ -1,0 +1,29 @@
+.row{
+    margin: 0;
+}
+
+.col-3, .col-9{
+    padding: 0; /*拿掉 boostrap 預設*/
+}
+
+.col-3{
+    position: fixed;
+    min-height: 100vh;
+    width: 23.125%;
+}
+
+.col-9{
+    margin-left: 23.125%;               
+    width: 76.875%; 
+    padding-left: 32px;
+}    
+
+.container{
+    padding: 32px 0;
+}
+
+.working-img{
+    padding-top: 64px;
+    width: 400px;
+    margin: 0 auto;
+}
