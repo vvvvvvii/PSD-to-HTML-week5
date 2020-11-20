@@ -1,5 +1,71 @@
+@charset "UTF-8";
+body {
+  font-size: 16px;
+}
+
+img {
+  display: block;
+}
+
 /*color variable*/
+/*font size variable*/
 /*line height variable*/
+.primary {
+  color: #EDF4EE;
+}
+
+.border-bottom-primary {
+  border-bottom: 1px solid #EDF4EE;
+}
+
+.accent {
+  color: #121212;
+}
+
+.border-bottom-accent {
+  border-bottom: 1px solid #121212;
+}
+
+.secondary {
+  color: #FFFFFF;
+}
+
+.border-bottom-secondary {
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.warning {
+  color: #E3006E;
+}
+
+.border-bottom-warning {
+  border-bottom: 1px solid #E3006E;
+}
+
+.dark-primary {
+  color: #2A8356;
+}
+
+.border-bottom-dark-primary {
+  border-bottom: 1px solid #2A8356;
+}
+
+.light-primary {
+  color: #CDDDCD;
+}
+
+.border-bottom-light-primary {
+  border-bottom: 1px solid #CDDDCD;
+}
+
+.light-accent {
+  color: #0000009A;
+}
+
+.border-bottom-light-accent {
+  border-bottom: 1px solid #0000009A;
+}
+
 .lh-xs {
   line-height: 15px;
 }
@@ -24,10 +90,6 @@
   line-height: 29px;
 }
 
-body {
-  font-size: 16px;
-}
-
 .font-xs {
   font-size: 0.75rem;
 }
@@ -48,32 +110,196 @@ body {
   font-size: 1.5rem;
 }
 
-img {
-  display: block;
-}
-
 a {
-  color: #000;
+  color: #121212;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-td, th {
-  padding: 10px 15px;
-}
-
-th {
-  text-align: left;
-  border-bottom: 1px solid;
-}
-
-td {
-  border-bottom: 1px solid #CDDDCD;
+a:hover {
+  color: #2A8356;
+  text-decoration: none;
+  /*拿掉 boostrap 預設*/
 }
 
 .middle {
   vertical-align: middle;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background: #EDF4EE !important;
+}
+
+.row {
+  margin: 0;
+}
+
+.col-3, .col-9 {
+  padding: 0;
+  /*拿掉 boostrap 預設*/
+}
+
+.col-3 {
+  position: fixed;
+  min-height: 100vh;
+  width: 23.125%;
+}
+
+.col-9 {
+  margin-left: 23.125%;
+  width: 76.875%;
+  padding-left: 32px;
+}
+
+.container {
+  padding: 32px 0;
+}
+
+.working-img {
+  padding-top: 64px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.sidenav {
+  margin-bottom: 330px;
+}
+
+.login-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 32px;
+}
+
+.login-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true");
+  background-position: center;
+  background-size: contain;
+}
+
+.login-name {
+  margin-left: 16px;
+}
+
+.list-group {
+  display: block;
+}
+
+.list-group-item {
+  border: none;
+  background: #EDF4EE;
+  padding-left: 32px;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #2A8356;
+  background: #EDF4EE;
+  border-left: 4px solid #2A8356;
+  padding-left: 28px;
+  /* 覆蓋樣式 color: #fff; 
+    background-color: #007bff; 
+    border-color: #007bff; */
+}
+
+.list-group-item-action {
+  color: #121212;
+}
+
+.list-group-item-action:hover {
+  color: #FFFFFF;
+  background: #2A8356;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+.topic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toptoolbar {
+  margin-left: 46px;
+}
+
+.topnav span:hover {
+  color: #2A8356;
+}
+
+.notification {
+  margin-left: 24px;
+}
+
+.adminList {
+  margin-bottom: 63px;
+}
+
+.adminList-th-padding {
+  padding-bottom: 4px;
+}
+
+.adminList-padding {
+  padding-top: 19px;
+  padding-bottom: 17px;
+}
+
+.id-col {
+  width: 12.9735%;
+}
+
+.name-col {
+  width: 25.4347%;
+}
+
+.email-col {
+  width: 35.326%;
+}
+
+.verfied-col {
+  width: 19.2391%;
+}
+
+.visibility-col {
+  width: 5.1086%;
+}
+
+.pagination {
+  position: absolute;
+  right: 0px;
+}
+
+.page-link {
+  color: #2A8356;
+  border: 1px solid #2A8356;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  padding: 4px;
+}
+
+.page-link:hover {
+  color: #FFFFFF;
+  background: #2A8356;
 }
 /*# sourceMappingURL=all.css.map */
