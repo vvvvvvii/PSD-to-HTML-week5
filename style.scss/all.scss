@@ -1,7 +1,12 @@
 //boostrap 已有 css normalize 不用載入自己的 css reset
-@import "mixin";
+@import "mixin"; //全域變數及易忘功能
 @import "variable"; //變數
-@import "@each"; // line-height each
-@import "utils"; //font & color
+@import "@each"; // ＠each function
+
 @import "module"; //各元件 
 
+@import "layout"; //排版共通樣式
+@import "col3"; //col3 細部設定
+@import "col9"; //col9 細部設定
+
+@import "admin";
