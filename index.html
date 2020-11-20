@@ -7,18 +7,21 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="style.scss/all.scss">
+    <link rel="stylesheet" href=./css/all.css>
     <title>Document</title>
 </head>
 
 <body>
-        <div class="row">
-            <div class="col-4">
-                <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg" alt="logo_img">
+    <div class="row">
+        <div class="col-3 bg-primary">
+            <nav class="container sidenav">
                 <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
+                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg" alt="logo_img">
+                    </a>
                     <a class="list-group-item list-group-item-action font-m lh-m" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
                         <span class="material-icons middle">
-                            assessment
+                             assessment
                         </span>
                         Dashboard
                     </a>
@@ -52,239 +55,313 @@
                         </span>
                         Settings
                     </a>
+                    
+                </div>    
+            </nav>
+            <div class="login-detail">
+                <div class="login-img">
                 </div>
+                <p class="login-name accent font-m lh-m">
+                    Andy Chen<br>
+                    <span class="light-accent font-s lh-s">
+                        andy0401@mail.com
+                    </span>
+                </p>
             </div>
-            <div class="col-8">
+        </div>
+        <div class="col-9">
                 <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
-                        Dashboard 頁面建置中
+                    <div class="tab-pane fade" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
+                        <img src="https://uploads-ssl.webflow.com/5e583fbf15d1e81e3dc2acf9/5e61990b17209bcec082117f_Download.svg" class="working-img" alt="Dashboard 頁面建置中">
+                        <p class="text-center">Dashboard 頁面建置中</p>
                     </div>
-                    <div class="tab-pane fade" id="list-question" role="tabpanel" aria-labelledby="list-question-list">
-                        Question 頁面建置中
+                    <div class="tab-pane fade m0-auto" id="list-question" role="tabpanel" aria-labelledby="list-question-list">
+                        <img src="https://uploads-ssl.webflow.com/5e583fbf15d1e81e3dc2acf9/5e61990b17209bcec082117f_Download.svg" class="working-img" alt="Question 頁面建置中">
+                        <p class="text-center">Question 頁面建置中</p>
                     </div>
-                    <div class="tab-pane fade" id="list-assignment" role="tabpanel" aria-labelledby="list-assignment-list">
+                    <div class="tab-pane fade m0-auto" id="list-assignment" role="tabpanel" aria-labelledby="list-assignment-list">
 
                     </div>
-                    <div class="tab-pane fade" id="list-course" role="tabpanel" aria-labelledby="list-course-list">
-                        Course 頁面建置中
+                    <div class="tab-pane fade m0-auto" id="list-course" role="tabpanel" aria-labelledby="list-course-list">
+                        <img src="https://uploads-ssl.webflow.com/5e583fbf15d1e81e3dc2acf9/5e61990b17209bcec082117f_Download.svg" class="working-img" alt="Course 頁面建置中">
+                        <p class="text-center">Course 頁面建置中</p>
                     </div>
-                    <div class="tab-pane fade active" id="list-admin" role="tabpanel" aria-labelledby="list-admin-list">
-                        <table>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Verfied</th>
-                                <th></th>
-                                <th></th>
+                    <div class="tab-pane fade show active container" id="list-admin" role="tabpanel" aria-labelledby="list-admin-list">
+                        <div class="header">
+                            <div class="topic">
+                                <h1 class="font-xl lh-xxl">Admin</h1>
+                                <h2 class="font-m lh-m toptoolbar">
+                                <a href="#">
+                                    <span class="material-icons middle dark-primary font-xl">
+                                        add
+                                    </span>
+                                    Add New Admin
+                                </a>
+                            </h2>
+                            </div>
+                            <div class="topnav">
+                                <a href="#">
+                                    <span class="material-icons middle accent font-xl">
+                                        search
+                                    </span>
+                                </a>
+                                <a href="#">
+                                    <span class="notification material-icons middle accent font-xl">
+                                        notifications_active
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <table class="adminList">
+                            <tr class="border-bottom-accent">
+                                <th class="id-col adminList-th-padding">
+                                    ID
+                                    <span class="material-icons middle dark-primary font-xs">
+                                        arrow_downward
+                                    </span>
+                                </th>
+                                <th class="name-col adminList-th-padding">Name</th>
+                                <th class="email-col adminList-th-padding">Email</th>
+                                <th class="verfied-col adminList-th-padding">Verfied</th>
+                                <th class="visibility-col adminList-th-padding"></th>
+                                <th class="adminList-th-padding"></th>
                             </tr>
-                            <tr>
-                                <td>#1</td>
-                                <td>Emir Wicks</td>
-                                <td>emir.wicks@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#1</td>
+                                <td class="adminList-padding">Emir Wicks</td>
+                                <td class="adminList-padding">emir.wicks@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding"> 
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#2</td>
-                                <td>Zaina Goldsmith</td>
-                                <td>zaina.goldsmith@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#2</td>
+                                <td class="adminList-padding">Zaina Goldsmith</td>
+                                <td class="adminList-padding">zaina.goldsmith@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#3</td>
-                                <td>Mahima Lopez</td>
-                                <td>Mahima.Lopez@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#3</td>
+                                <td class="adminList-padding">Mahima Lopez</td>
+                                <td class="adminList-padding">Mahima.Lopez@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#4</td>
-                                <td>Pharrell Murray</td>
-                                <td>Pharrell.Murray@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#4</td>
+                                <td class="adminList-padding">Pharrell Murray</td>
+                                <td class="adminList-padding">Pharrell.Murray@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#5</td>
-                                <td>Annika Mcbride</td>
-                                <td>Annika.Mcbride@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#5</td>
+                                <td class="adminList-padding">Annika Mcbride</td>
+                                <td class="adminList-padding">Annika.Mcbride@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#6</td>
-                                <td>Fatimah Clark</td>
-                                <td>Fatimah.Clark@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#6</td>
+                                <td class="adminList-padding">Fatimah Clark</td>
+                                <td class="adminList-padding">Fatimah.Clark@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#7</td>
-                                <td>Klaudia Rhodes</td>
-                                <td>Klaudia.Rhodes@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#7</td>
+                                <td class="adminList-padding">Klaudia Rhodes</td>
+                                <td class="adminList-padding">Klaudia.Rhodes@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#8</td>
-                                <td>Tillie Lucero</td>
-                                <td>Tillie.Lucero@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#8</td>
+                                <td class="adminList-padding">Tillie Lucero</td>
+                                <td class="adminList-padding">Tillie.Lucero@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#9</td>
-                                <td>Sabrina Stephenson</td>
-                                <td>Sabrina.Stephenson@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#9</td>
+                                <td class="adminList-padding">Sabrina Stephenson</td>
+                                <td class="adminList-padding">Sabrina.Stephenson@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
-                            <tr>
-                                <td>#10</td>
-                                <td>Annie Smith</td>
-                                <td>Annie.Smith@mail.com</td>
-                                <td>Yes</td>
-                                <td>
+                            <tr class="border-bottom-light-primary">
+                                <td class="adminList-padding">#10</td>
+                                <td class="adminList-padding">Annie Smith</td>
+                                <td class="adminList-padding">Annie.Smith@mail.com</td>
+                                <td class="adminList-padding">Yes</td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             visibility
                                         </span>
                                     </a>
                                 </td>
-                                <td>
+                                <td class="adminList-padding">
                                     <a href="#">
-                                        <span class="material-icons middle">
+                                        <span class="material-icons middle font-xl">
                                             edit
                                         </span>
                                     </a>
                                 </td>
                             </tr>
                         </table>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="material-icons font-xl">
+                                            navigate_before
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link font-m lh-m" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link font-m lh-m" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link font-m lh-m" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span class="material-icons font-xl">
+                                            navigate_next
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                          </nav>
                     </div>
                     <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-                        Settings 頁面建置中</div>
+                        <img src="https://uploads-ssl.webflow.com/5e583fbf15d1e81e3dc2acf9/5e61990b17209bcec082117f_Download.svg" class="working-img" alt="Settings 頁面建置中">
+                        <p class="text-center">Settings 頁面建置中</p>
+                    </div>
                 </div>
-            </div>
         </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
