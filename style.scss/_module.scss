@@ -1,5 +1,6 @@
 a{
     color: $accent;
+    cursor: pointer;
     &:hover{
         color: $dark-primary;
         text-decoration: none; /*拿掉 boostrap 預設*/
@@ -18,6 +19,8 @@ a{
     background: $primary!important;
 }
 
-
+.bg-dark-primary{
+    background: $dark-primary;
+}
 
 
