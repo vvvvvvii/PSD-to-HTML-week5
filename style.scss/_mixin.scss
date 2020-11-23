@@ -9,6 +9,10 @@
     vertical-align: middle;
 }
 
+@mixin border-none{
+    border: none;
+}
+
 body{
     font-size: 16px;
 }
