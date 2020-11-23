@@ -5,6 +5,19 @@
   .border-bottom-#{$name} {
     border-bottom: 1px solid $color;
   }
+  .bg-#{$name} {
+    background: $color!important;
+  }
+  .btn-#{$name} {
+    color: $color;
+    border: 1px solid $color;
+    background: $secondary;
+    padding: 0.5rem 2rem;
+    &:hover{
+      color: $secondary;
+      background: $color;
+    }
+  }
 }
 
 @each $name, $lineHeight in $lineHeightTypes {
