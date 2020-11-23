@@ -39,10 +39,10 @@
 .page-link{
     color: $dark-primary;
     border: 1px solid $dark-primary;
-    height: 32px;
-    width: 32px;
+    height: 2rem;
+    width: 2rem;
     text-align: center;
-    padding: 4px;
+    padding: .25rem;
     &:hover{
         color: $secondary;
         background: $dark-primary;
