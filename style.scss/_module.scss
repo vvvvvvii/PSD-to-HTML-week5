@@ -7,6 +7,10 @@ a{
     }
 }
 
+.w-100percent{
+    width: 100%;
+}
+
 .middle{
     vertical-align: middle;
 }
@@ -15,12 +19,16 @@ a{
     text-align: center;
 }
 
-.bg-primary{
-    background: $primary!important;
+.disable:hover{
+    cursor: not-allowed;
 }
 
-.bg-dark-primary{
-    background: $dark-primary;
+.space-between{
+    display: flex;
+    justify-content: space-between;
 }
+
+
+
 
 
