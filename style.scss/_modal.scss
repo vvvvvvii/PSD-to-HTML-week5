@@ -1,0 +1,101 @@
+.search .modal-content{
+    width: 480px;
+}
+
+.modal-header, .modal-footer{
+    @include border-none;
+}
+
+.modal-header{
+    margin: 2rem 2rem 1rem 2rem;
+    padding: 0 1rem;
+}
+
+.modal-body{
+    margin: 0 2rem;
+    border-bottom: 1px solid $light-primary;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.modal-body h4{
+    margin-bottom: 1rem;
+}
+
+.form-check{
+    margin-bottom: 1rem;
+}
+
+.form-check-label{
+    @include display-inline;
+}
+
+.border-none{
+    @include border-none;
+}
+
+.send-verification-btn{
+    color: $dark-primary;
+    border: 1px solid $light-primary;
+    background: $secondary;
+    padding: 1rem 0;
+    &:hover{
+      color: $secondary;
+      background: $dark-primary;
+    }
+}
+
+.profile_img{
+    width: 141px;
+    height: 141px;
+}
+
+.profile-detail{
+    margin-left: 1.5rem;
+}
+
+.verified-status{
+    background: $light-primary;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+}
+
+.close-collapse{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 6.0625rem;
+}
+
+.arrow-down{
+    display: block;
+    color: $dark-primary;
+    margin-top: 5.8125rem;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.card{
+    width:  52.7083%;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    padding: 0 0 2rem 12.9rem;
+}
+
+.edit-btn{
+    margin-left: 1rem;
+}
+
+.admin-editcard{
+    padding: 0;
+    justify-content: flex-start;
+}
+
+.deactivate-btn{
+    color: $warning;
+    border: 1px solid $warning;
+    background: $secondary;
+    padding: 1rem 0;
+}
