@@ -12,11 +12,101 @@
     width: 23.125%;
 }
 
+.sidenav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.login-detail{
+    display: flex;
+    padding: 32px;
+}
+
+.login-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true");
+    background-position:center;
+    background-size: contain;
+}
+
+.login-name{
+    margin-left: 16px;
+}
+    
+.nav{
+    display: block;
+}
+
+.nav-link{
+    border: none;
+    background: $primary;
+    padding-left: 32px;
+}
+
+.nav-link.active{
+    z-index: 2;
+    color: $dark-primary;
+    background: $primary;
+    border-left: 4px solid $dark-primary;
+    padding-left: 28px;
+    /* 覆蓋樣式 color: #fff; 
+    background-color: #007bff; 
+    border-color: #007bff; */
+}
+
+.nav-link-action{
+    color: $accent;
+    &:hover{
+        color: $secondary;
+        background: $dark-primary;
+    }
+}
+
 .col-9{
     margin-left: 23.125%;               
     width: 76.875%; 
     padding-left: 32px;
 }    
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.topic{
+    display: flex;
+    align-items: center;
+}
+
+.toptoolbar{
+    margin-left: 2.875rem;
+}
+
+.topnav span:hover{
+    color: $dark-primary;
+}
+
+.search .modal-content{
+    width: 65%;
+}
+
+.search-btn{
+    background: $light-primary;
+    color: $dark-primary;
+    &:hover{
+        background: $dark-primary;
+        color: $primary;
+    }
+}
+
+.notification{
+    margin-left: 1.5rem;
+}
 
 .container{
     padding: 32px 0;
