@@ -32,8 +32,8 @@
 }
 
 .pagination{
-    position:absolute;
-    right:0px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .page-link{
