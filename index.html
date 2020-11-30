@@ -14,50 +14,50 @@
 
 <body>
     <div class="row">
-        <div class="col-3 bg-primary">
-            <nav class="container sidenav">
-                <div class="list-group" id="list-tab" role="tablist">
-                    <a class="list-group-item" id="list-dashboard-list" data-toggle="list" href="#list-dashboard"
-                        role="tab" aria-controls="dashboard">
-                        <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg"
-                            alt="logo_img">
-                    </a>
-                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-dashboard-list"
+        <div class="col-3 bg-primary sidenav">
+            <nav class="container">
+                <div class="nav" id="list-tab" role="tablist">
+                    <h1 class="hide-text">
+                        <a class="nav-link" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
+                            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/7059003f6d011be52053cb5e63d68f3999af01d7/week5/logo-ANSWER.svg" alt="logo_img">
+                        </a>
+                    </h1>
+                    <a class="nav-link nav-link-action font-m lh-m" id="list-dashboard-list"
                         data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
                         <span class="material-icons middle">
                             assessment
                         </span>
                         Dashboard
                     </a>
-                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-question-list"
+                    <a class="nav-link nav-link-action font-m lh-m" id="list-question-list"
                         data-toggle="list" href="#list-question" role="tab" aria-controls="question">
                         <span class="material-icons middle">
                             question_answer
                         </span>
                         Question
                     </a>
-                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-assignment-list"
+                    <a class="nav-link nav-link-action font-m lh-m" id="list-assignment-list"
                         data-toggle="list" href="#list-assignment" role="tab" aria-controls="assignment">
                         <span class="material-icons middle">
                             assignment
                         </span>
                         Assignment
                     </a>
-                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-course-list"
+                    <a class="nav-link nav-link-action font-m lh-m" id="list-course-list"
                         data-toggle="list" href="#list-course" role="tab" aria-controls="course">
                         <span class="material-icons middle">
                             video_library
                         </span>
                         Course
                     </a>
-                    <a class="list-group-item list-group-item-action active font-m lh-m" id="list-admin-list"
+                    <a class="nav-link nav-link-action active font-m lh-m" id="list-admin-list"
                         data-toggle="list" href="#list-admin" role="tab" aria-controls="admin">
                         <span class="material-icons middle">
                             people_alt
                         </span>
                         Admin
                     </a>
-                    <a class="list-group-item list-group-item-action font-m lh-m" id="list-settings-list"
+                    <a class="nav-link nav-link-action font-m lh-m" id="list-settings-list"
                         data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
                         <span class="material-icons middle">
                             settings
@@ -105,7 +105,7 @@
                 <div class="tab-pane fade show active container" id="list-admin" role="tabpanel" aria-labelledby="list-admin-list">
                     <div class="header">
                         <div class="topic">
-                            <h1 class="font-xl lh-xxl">Admin</h1>
+                            <h2 class="font-xl lh-xxl">Admin</h2>
                             <h2 class="font-m lh-m toptoolbar">
                                 <a href="#" data-toggle="modal" data-target="#newAdminModal">
                                     <span class="material-icons middle dark-primary font-xl">
@@ -117,7 +117,7 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header accent">
-                                                <h3 class="modal-title font-xl lh-xxl" id="modalLongTitle">
+                                                <h3 class="modal-title font-xl lh-xxl" id="newAdminModal">
                                                     New Admin
                                                 </h3>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -128,12 +128,12 @@
                                                 <form action="#">
                                                     <h4 class="font-l lh-xl">Account</h4>
                                                     <div class="form-group">
-                                                        <label for="inputName" class="font-s lh-s">Name</label>
-                                                        <input type="text" class="form-control" id="inputName" placeholder="請輸入姓名">
+                                                        <label for="inputName1" class="font-s lh-s">Name</label>
+                                                        <input type="text" class="form-control" id="inputName1" placeholder="請輸入姓名">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="inputEmail" class="font-s lh-s">Email</label>
-                                                        <input type="text" class="form-control" id="inputEmail" placeholder="請輸入 Email">
+                                                        <label for="inputEmail1" class="font-s lh-s">Email</label>
+                                                        <input type="text" class="form-control" id="inputEmail1" placeholder="請輸入 Email">
                                                     </div>
                                                 </form>
                                             </div>
@@ -304,11 +304,11 @@
                                         edit
                                     </span>
                                 </a>
-                                <div class="search modal fade" id="editAdmin" tabindex="-1" role="dialog" aria-labelledby="newAdminModal" aria-hidden="true">
+                                <div class="search modal fade" id="editAdmin" tabindex="-1" role="dialog" aria-labelledby="editAdminModal" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header accent">
-                                                <h3 class="modal-title font-xl lh-xxl" id="modalLongTitle">
+                                                <h3 class="modal-title font-xl lh-xxl" id="editAdminModal">
                                                     Edit Admin
                                                 </h3>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -319,12 +319,12 @@
                                                 <form action="#">
                                                     <h4 class="font-l lh-xl">Account</h4>
                                                     <div class="form-group">
-                                                        <label for="inputName" class="font-s lh-s">Name</label>
-                                                        <input type="text" class="form-control bg-light-primary" id="inputName" placeholder="Emir Wicks">
+                                                        <label for="inputName2" class="font-s lh-s">Name</label>
+                                                        <input type="text" class="form-control bg-light-primary" id="inputName2" placeholder="Emir Wicks">
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="inputEmail" class="font-s lh-s">Email</label>
-                                                        <input type="text" class="form-control bg-light-primary" id="inputEmail" placeholder="emir.wicks@mail.com">
+                                                        <label for="inputEmail2" class="font-s lh-s">Email</label>
+                                                        <input type="text" class="form-control bg-light-primary" id="inputEmail2" placeholder="emir.wicks@mail.com">
                                                     </div>
                                                 </form>
                                             </div>
