@@ -273,31 +273,24 @@ a:hover {
   width: 23.125%;
 }
 
-.col-9 {
-  margin-left: 23.125%;
-  width: 76.875%;
-  padding-left: 32px;
-}
-
-.container {
-  padding: 32px 0;
-}
-
-.working-img {
-  padding-top: 64px;
-  width: 400px;
-  margin: 0 auto;
-}
-
 .sidenav {
-  margin-bottom: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .login-detail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 32px;
+  padding: 32px;
 }
 
 .login-img {
@@ -313,17 +306,17 @@ a:hover {
   margin-left: 16px;
 }
 
-.list-group {
+.nav {
   display: block;
 }
 
-.list-group-item {
+.nav-link {
   border: none;
   background: #EDF4EE;
   padding-left: 32px;
 }
 
-.list-group-item.active {
+.nav-link.active {
   z-index: 2;
   color: #2A8356;
   background: #EDF4EE;
@@ -334,13 +327,19 @@ a:hover {
     border-color: #007bff; */
 }
 
-.list-group-item-action {
+.nav-link-action {
   color: #121212;
 }
 
-.list-group-item-action:hover {
+.nav-link-action:hover {
   color: #FFFFFF;
   background: #2A8356;
+}
+
+.col-9 {
+  margin-left: 23.125%;
+  width: 76.875%;
+  padding-left: 32px;
 }
 
 .header {
@@ -391,6 +390,16 @@ a:hover {
   margin-left: 1.5rem;
 }
 
+.container {
+  padding: 32px 0;
+}
+
+.working-img {
+  padding-top: 64px;
+  width: 400px;
+  margin: 0 auto;
+}
+
 .adminList {
   margin-bottom: 63px;
 }
@@ -425,8 +434,12 @@ a:hover {
 }
 
 .pagination {
-  position: absolute;
-  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .page-link {
