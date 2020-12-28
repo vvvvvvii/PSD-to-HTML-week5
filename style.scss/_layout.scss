@@ -16,11 +16,12 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    padding: 32px 0;
 }
 
 .login-detail{
     display: flex;
-    padding: 32px;
+    padding: 0 32px;
 }
 
 .login-img{
@@ -108,12 +109,12 @@
     margin-left: 1.5rem;
 }
 
-.container{
-    padding: 32px 0;
-}
-
 .working-img{
     padding-top: 64px;
     width: 400px;
     margin: 0 auto;
+}
+
+.tab-content{
+    padding: 32px 0;
 }
